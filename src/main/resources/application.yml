@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/jpashop
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      #      ddl-auto: create # SQL 실행시점에 내가 가지고있는 엔티티를 정보를 보고 다 지우고 다시
+      ddl-auto: update
+    preperties:
+      hibernate:
+        #        show_sql: true # 시스템 아웃에서 찍는 로그 (운영환경에선 꺼야함)
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+#    org.hibernate.type: trace # 파라미터 보이는 옵션 가독성이 좋지 못하게 ?? 하고 밑에 나오기 때문에 외부라이브러리를 사용

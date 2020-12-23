@@ -1,0 +1,18 @@
+spring:
+#  datasource:
+#    url: jdbc:h2:mem:
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create # SQL 실행시점에 내가 가지고있는 엔티티를 정보를 보고 다 지우고 다시
+#    preperties:
+#      hibernate:
+##        show_sql: true // 시스템 아웃에서 찍는 로그 (운영환경에선 꺼야함)
+#        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
